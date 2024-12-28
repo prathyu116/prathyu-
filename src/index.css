@@ -32,6 +32,12 @@ background: -webkit-linear-gradient(Odeg, #fafafa,
 .headline-1 {
   @apply text-5xl leading-tight  font-semibold lg:text-[55px] lg:leading-[1.15];
 }
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold ;
+}
+.title-1 {
+  @apply text-[22px] font-normal
+}
 /*--------------------------*\
 * UTILITIES                   
 \*--------------------------*/
@@ -41,6 +47,10 @@ background: -webkit-linear-gradient(Odeg, #fafafa,
 }
 .img-cover {
   @apply w-full h-full object-cover;
+}
+
+.section {
+  @apply pt-20 lg:pt-32;
 }
 
 .menu-btn {

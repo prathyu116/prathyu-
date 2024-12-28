@@ -1,22 +1,31 @@
 import { useState } from 'react'
+import { ReactLenis, useLenis } from "lenis/react";
+
 import Header from './components/Header'
 import Hero from './components/Hero'
+import About from './components/About'
+import Skill from './components/Skill'
+import Work from './components/Work'
+import Contact from './components/Contact'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <ReactLenis root>
       <div>
-        < Header />
+        <Header />
         <main>
           <Hero />
+          <About />
+          <Skill />
+          <Work />
+          <Contact />
         </main>
       </div>
-       
-    </>
-  )
+    </ReactLenis>
+  );
 }
 
 export default App
