@@ -7,6 +7,7 @@ import About from './components/About'
 import Skill from './components/Skill'
 import Work from './components/Work'
 import Contact from './components/Contact'
+import Timeline from './components/Timeline';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <main>
           <Hero />
           <About />
+          <Timeline />
           <Skill />
           <Work />
           <Contact />

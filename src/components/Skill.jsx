@@ -47,7 +47,7 @@ const skillItem = [
     desc: "User Interface",
   },
   {
-    imgSrc: "/images/file-type-aws.512x335.png",
+    imgSrc: "/images/awss.svg",
     label: "AWS",
     desc: "Amazon Web Services",
   },
@@ -94,8 +94,8 @@ const skillItem = [
 ];
 const Skill = () => {
   return (
-    <section className="section">
-      <div className="container border">
+    <section id="skills" className="section">
+      <div className="container ">
         <h2 className="headline-2">Essential Tool I use</h2>
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
           Discover the powerful tools and technologies I use to create
