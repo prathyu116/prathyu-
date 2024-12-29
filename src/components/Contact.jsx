@@ -104,7 +104,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center gap-2 mt-auto">
+          <div className="flex items-center gap-2 mt-auto mb-7">
             {socialLinks.map(({ href, icon }, key) => {
               return (
                 <a

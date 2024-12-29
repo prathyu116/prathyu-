@@ -23,17 +23,15 @@ const ButtonPrimary = ({ label, href, target = '_self', icon, classes }) => {
 
     } else {
         return (
-            <button className={`btn btn-primary ${classes}`}>
-                {label}
-                {icon ?
-                    <span className={`material-symbols-rounded`}
-                        aria-hidden="true">
-                        {icon}
-                    </span>
-                    : undefined
-                }
-            </button>
-        )
+          <button className={`btn btn-primary border-none ${classes}`}>
+            {label}
+            {icon ? (
+              <span className={`material-symbols-rounded`} aria-hidden="true">
+                {icon}
+              </span>
+            ) : undefined}
+          </button>
+        );
     }
 }
 const ButtonOutline = ({ label, href, target = '_self', icon, classes }) => {
