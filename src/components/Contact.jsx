@@ -77,7 +77,7 @@ const socialLinks = [
 const Contact = () => {
   return (
     <section className="section" id="contact">
-      <div className="container  bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5">
+      <div className="container rounded-md  bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5">
         <div className="">
           <h2 className="headline-2 lg:max-w-[12ch]">Contact Me</h2>
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50] lg:max-w-[30ch">
@@ -88,7 +88,8 @@ const Contact = () => {
             <div className="flex items-center gap-3">
               <span className="material-icons text-zinc-400">📧</span>
               <a
-                href="mailto:your-email@example.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=prathyuprasad116@gmail.com"
+                target="_blank"
                 className="text-zinc-300 hover:text-zinc-100 transition-colors"
               >
                 prathyuprasad116@gmail.com

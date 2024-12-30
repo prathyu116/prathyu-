@@ -46,7 +46,7 @@ const activeCurrentLink = (e) => {
         className: "nav-link",
       },
       {
-        label: "Work",
+        label: "Projects",
         link: "#work",
         className: "nav-link",
       },

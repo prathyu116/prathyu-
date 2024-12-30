@@ -4,38 +4,42 @@ import PropTypes from 'prop-types';
 const ButtonPrimary = ({ label, href, target = '_self', icon, classes }) => {
     console.log("href", classes)
 
-    if (href) {
-        return (
-            <a
-                href={href}
-                target={target}
-                className={"btn btn-primary" + classes}>
-                {label}
-                {icon ?
-                    <span className="material-symbols-rounded"
-                        aria-hidden="true">
-                        {icon}
-                    </span>
-                    : undefined
-                }
-            </a>
-        )
+    // if (href) {
+    //     return (
+    //         <a
+    //             href={href}
+    //             target={target}
+    //             className={"btn btn-primary" + classes}>
+    //             {label}
+    //             {icon ?
+    //                 <span className="material-symbols-rounded"
+    //                     aria-hidden="true">
+    //                     {icon}
+    //                 </span>
+    //                 : undefined
+    //             }
+    //         </a>
+    //     )
 
-    } else {
+    // } else {
         return (
-          <button className={`btn btn-primary border-none ${classes}`}>
+          <a
+            href="/images/PRATHYU PRASAD RESUME.pdf"
+            className={`btn btn-primary border-none ${classes}`}
+            download={true}
+          >
             {label}
             {icon ? (
               <span className={`material-symbols-rounded`} aria-hidden="true">
                 {icon}
               </span>
             ) : undefined}
-          </button>
+          </a>
         );
-    }
+    // }
 }
 const ButtonOutline = ({ label, href, target = '_self', icon, classes }) => {
-    console.log("href", classes)
+    console.log("hrefButtonOutline", classes);
 
     if (href) {
         return (
