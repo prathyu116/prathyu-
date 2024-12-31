@@ -22,20 +22,29 @@ const ButtonPrimary = ({ label, href, target = '_self', icon, classes }) => {
     //     )
 
     // } else {
-        return (
-          <a
-            href="/images/PRATHYU PRASAD RESUME.pdf"
-            className={`btn btn-primary border-none ${classes}`}
-            download={true}
-          >
-            {label}
-            {icon ? (
-              <span className={`material-symbols-rounded`} aria-hidden="true">
-                {icon}
-              </span>
-            ) : undefined}
-          </a>
-        );
+       return (
+         <a
+           href="/images/PRATHYU PRASAD RESUME.pdf"
+           className={`btn btn-primary border-none ${classes}`}
+           target="_blank"
+           rel="noopener noreferrer"
+           onClick={(e) => {
+             e.preventDefault(); // Prevent default link behavior
+             const link = document.createElement("a");
+             link.href = "/images/PRATHYU PRASAD RESUME.pdf";
+             link.download = "PRATHYU PRASAD RESUME.pdf"; // Set the file name for download
+             link.click(); // Trigger the download
+             window.open("/images/PRATHYU PRASAD RESUME.pdf", "_blank"); // Open the file in a new tab
+           }}
+         >
+           {label}
+           {icon ? (
+             <span className={`material-symbols-rounded`} aria-hidden="true">
+               {icon}
+             </span>
+           ) : undefined}
+         </a>
+       );
     // }
 }
 const ButtonOutline = ({ label, href, target = '_self', icon, classes }) => {
@@ -46,7 +55,7 @@ const ButtonOutline = ({ label, href, target = '_self', icon, classes }) => {
             <a
                 href={href}
                 target={target}
-                className={`btn btn-outline ${classes}`}>
+                className={`btn btn-outline border-none ${classes}`}>
                 {label}
                 {icon ?
                     <span className="material-symbols-rounded"
@@ -60,17 +69,15 @@ const ButtonOutline = ({ label, href, target = '_self', icon, classes }) => {
 
     } else {
         return (
-            <button className={`btn btn-outline ${classes}`}>
-                {label}
-                {icon ?
-                    <span className={`material-symbols-rounded`}
-                        aria-hidden="true">
-                        {icon}
-                    </span>
-                    : undefined
-                }
-            </button>
-        )
+          <button className={`btn btn-outline border-none ${classes}`}>
+            {label}
+            {icon ? (
+              <span className={`material-symbols-rounded`} aria-hidden="true">
+                {icon}
+              </span>
+            ) : undefined}
+          </button>
+        );
     }
 }
 ButtonPrimary.propTypes = {
