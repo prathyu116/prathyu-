@@ -45,9 +45,9 @@ rounded-full bg-emerald-400 animate-ping"
           </div>
         </div>
         <div className="  hidden lg:block">
-          <figure className=" w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400 to-65% rounded-[60px] overflow-hidden">
+          <figure className=" ">
             <img
-              src="images/avatar-3-.png"
+              src="images/hello.gif"
               width={656}
               height={800}
               alt="Prathyu Prasad"

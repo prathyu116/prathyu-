@@ -77,7 +77,7 @@ const socialLinks = [
 const Contact = () => {
   return (
     <section className="section" id="contact">
-      <div className="container rounded-md  bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5">
+      <div className="container flex rounded-md  bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 mb-4">
         <div className="">
           <h2 className="headline-2 lg:max-w-[12ch]">Contact Me</h2>
           <p className="text-zinc-400 mt-3 mb-8 max-w-[50] lg:max-w-[30ch">
@@ -117,6 +117,19 @@ const Contact = () => {
                 </a>
               );
             })}
+          </div>
+        </div>
+        <div className="hidden lg:block">
+          <div className="">
+            <figure className="">
+              <img
+                src="images/home_anime.gif"
+                width={656}
+                height={400}
+                alt="Prathyu Prasad"
+                className="w-full"
+              />
+            </figure>
           </div>
         </div>
       </div>
