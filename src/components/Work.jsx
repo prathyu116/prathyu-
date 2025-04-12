@@ -3,6 +3,13 @@ import PortfolioCard from './PortfolioCard';
 
 const works = [
   {
+    imgSrc: "/images/mock-ai.gif",
+    title: "Mock Mentor",
+    tags: ["Nextjs", "TailwindCSS", "Firebase", "GeminiAI", "shadcn/ui"],
+    projectLink: "https://mock-mentor.vercel.app/",
+    gitHubLink: "https://github.com/prathyu116/MockMentor",
+  },
+  {
     imgSrc: "/images/sudokku.gif",
     title: "Sudoku Game",
     tags: ["HTML", "CSS", "JS", "recursion", "backtracking"],
@@ -20,7 +27,7 @@ const works = [
   {
     imgSrc: "/images/netflix.gif",
     title: "Netflix clone",
-    tags: ["React", "API","Axios", "CSS"],
+    tags: ["React", "API", "Axios", "CSS"],
     projectLink: "https://react-netflix-clone--55.herokuapp.com/",
     gitHubLink: "https://github.com/prathyu116/React-Netflix-Clone",
   },
